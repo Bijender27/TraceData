@@ -8,13 +8,14 @@ type reportProp = {
   title: string;
   subTitle: string;
   pages: number;
-  publishDate: number | Date;
+  publishDate: string | Date | number;
   baseYear: number;
   startingPrice: number;
   urlSlug: string;
 };
 
 const ReportItem = (props:reportProp) => {
+  const date = new Date(props.publishDate || "");
   return (
     <div className="bg-[#2057A3]/5 w-full min-h-10 rounded-lg p-2.5 flex mb-5">
       <div className="flex gap-4 items-center pr-4 border-r border-[#E1E1E1]">
@@ -44,9 +45,9 @@ const ReportItem = (props:reportProp) => {
             <li>
               Published:{" "}
               <strong>
-                {props.publishDate.toLocaleDateString("en-US", {
-                  year: "numeric",
+                {date.toLocaleDateString("en-US", {
                   month: "long",
+                  year: "numeric",
                 })}
               </strong>
             </li>
