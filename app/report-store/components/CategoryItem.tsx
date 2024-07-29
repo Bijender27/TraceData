@@ -15,7 +15,7 @@ const CategoryItem = ({...props}) => {
           {props.name}
         </Link>
         <Link
-          href={""}
+          href={"/reports"}
           className="group w-full flex justify-between text-white hover:underline text-base font-semibold transition-all ease-in-out"
         >
           View Reports

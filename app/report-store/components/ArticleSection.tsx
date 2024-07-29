@@ -3,11 +3,12 @@ import warehouse from "../../../public/store-banner.jpg";
 import Link from 'next/link';
 import ArticleBox from './ArticleBox';
 
+
 const ArticleSection = () => {
   return (
     <div className="py-14 bg-[#f5f5f5]">
       <div className="max-w-[1200px] m-auto">
-        <h2 className="text-center text-[#011237] text-3xl font-black mb-5">
+        <h2 className="text-center text-[#011237] text-3xl font-black mb-16">
           Articles
         </h2>
         <div className="flex gap-10 m-auto">

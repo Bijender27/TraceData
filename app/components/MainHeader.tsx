@@ -23,7 +23,7 @@ const MainHeader = () => {
         <div className="flex justify-between w-full gap-5">
           <ul className="flex gap-5 text-sm">
             <li>
-              <Link href={""} className="flex gap-2 items-center font-medium">
+              <Link href={"/report-store"} className="flex gap-2 items-center font-medium">
                 Report Store <IoChevronDown />
               </Link>
             </li>
