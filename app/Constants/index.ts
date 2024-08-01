@@ -132,3 +132,95 @@ export const CategoryData: CategoryDataType[] = [
     imgUrl: `${technology.src}`,
   },
 ];
+
+interface IndustryList {
+  industryName: string;
+  industrySlug: string;
+}
+
+interface ResourceList {
+  resourceName: string;
+  resourceSlug: string;
+}
+
+export const industryList: IndustryList[] = [
+  {
+    industryName: "Agriculture and Animal Care",
+    industrySlug: "agriculture-animal-care-market",
+  },
+  {
+    industryName: "Automotive, Transportation and Warehousing",
+    industrySlug: "automotive-transportation-and-warehousing-market",
+  },
+  {
+    industryName: "Banking Financial Services and Insurance",
+    industrySlug: "banking-financial-services-and-insurance-market",
+  },
+  {
+    industryName: "Consumer Products and Retail",
+    industrySlug: "consumer-products-and-retail-market",
+  },
+  {
+    industryName: "Defense and Security",
+    industrySlug: "defense-and-security-market",
+  },
+  {
+    industryName: "Education and Recruitment",
+    industrySlug: "education-and-recruitment-market",
+  },
+  {
+    industryName: "Energy and Utilities",
+    industrySlug: "energy-and-utilities-market",
+  },
+  {
+    industryName: "Food, Beverage and Tobacco",
+    industrySlug: "food-beverage-and-tobacco-market",
+  },
+  {
+    industryName: "Healthcare",
+    industrySlug: "healthcare-market",
+  },
+  {
+    industryName: "Manufacturing and Construction",
+    industrySlug: "manufacturing-and-construction-market",
+  },
+  {
+    industryName: "Media and Entertainment",
+    industrySlug: "media-and-entertainment-market",
+  },
+  {
+    industryName: "Metal, Mining and Chemicals",
+    industrySlug: "metal-mining-and-chemicals-market",
+  },
+  {
+    industryName: "Public Sector and Administration",
+    industrySlug: "public-sector-and-administration-market",
+  },
+  {
+    industryName: "Technology and Telecom",
+    industrySlug: "technology-and-telecom-market",
+  },
+];
+
+export const resourceList: ResourceList[] = [
+  {
+    resourceName: "Case Studies",
+    resourceSlug: "case-studies",
+  },
+  {
+    resourceName: "Success Stories",
+    resourceSlug: "success-stories",
+  },
+  {
+    resourceName: "White Papers",
+    resourceSlug: "White Paper",
+  },
+  {
+    resourceName: "Interviews",
+    resourceSlug: "interviews",
+  },
+  {
+    resourceName: "Blogs",
+    resourceSlug: "blog",
+  },
+];
