@@ -19,8 +19,8 @@ const Home = () => {
   return (
     <div>
       <div className="bg-[#155bd5] text-white py-10">
-        <div className="flex max-w-[1200px] m-auto gap-5 justify-between items-center">
-          <div className="w-[50%]">
+        <div className="flex flex-col lg:flex-row max-w-[1200px] m-auto gap-5 justify-between items-center px-5 lg:px-0">
+          <div className="w-full lg:w-[50%]">
             <h1 className="text-4xl font-bold mb-5">
               We Transform The Growth Journey For Business Enterprises
             </h1>
@@ -42,7 +42,7 @@ const Home = () => {
               Get Started
             </button>
           </div>
-          <div>
+          <div className="hidden md:block">
             <Image
               src={bannerImage.src}
               width={500}
@@ -53,8 +53,8 @@ const Home = () => {
         </div>
       </div>
       <div className="py-20 bg-[#fafafa]">
-        <div className="max-w-[1200px] flex m-auto items-center gap-2">
-          <div className="flex items-center justify-center flex-1">
+        <div className="max-w-[1200px] flex flex-col lg:flex-row m-auto items-center gap-2 px-5 lg:px-0">
+          <div className="hidden md:flex items-center justify-center flex-1 ">
             <Image
               src={aboutImage.src}
               width={400}
@@ -78,7 +78,7 @@ const Home = () => {
       <section id="services" className="py-14">
         <div className="section-title-five max-w-[1200px] m-auto mb-5">
           <div className="col-12">
-            <div className="text-center w-1/2 m-auto">
+            <div className="text-center md:w-1/2 m-auto px-5">
               <h6 className="py-2 px-8 rounded-full border-2 border-[#155bd5] w-fit m-auto mb-3">
                 Services
               </h6>
@@ -93,8 +93,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1200px] m-auto">
-          <div className="grid grid-cols-3 gap-10">
+        <div className="max-w-[1200px] m-auto px-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             <div className="group py-10 px-8 border border-[#efefef] rounded-xl transition-all ease-out duration-300 hover:shadow-lg">
               <div className="w-[78px] h-[78px] rounded-full mb-6 bg-white border-2 border-[#155bd5] flex items-center justify-center text-[#155bd5] group-hover:bg-[#155bd5] group-hover:text-white transition-all ease-out duration-300">
                 <PiUsers className="text-4xl" />
@@ -198,8 +198,8 @@ const Home = () => {
       >
         <div className="absolute top-0 bottom-0 left-0 right-0 bg-[url('../public/overlay.png')] z-0 bg-cover"></div>
         <div className="max-w-[1200px] m-auto relative z-[2] text-center">
-          <div className="row justify-content-center">
-            <div className="w-1/2 m-auto">
+          <div className="px-5">
+            <div className="lg:w-1/2 m-auto">
               <h2 className="text-4xl font-bold text-white mb-6">
                 We love to make perfect <br />
                 solutions for your business
@@ -225,11 +225,11 @@ const Home = () => {
 
       <section id="contact" className="py-20">
         <div className="max-w-[1200px] m-auto">
-          <div className="flex gap-4">
-            <div className="w-1/3">
+          <div className="flex flex-col lg:flex-row gap-4 px-5 lg:px-0">
+            <div className="lg:w-1/3">
               <div className="row">
                 <div className="flex border border-[#e0e0e0] bg-white mb-7 p-5 rounded-lg hover:shadow-lg transition-all ease-out duration-300 gap-4">
-                  <div className="w-[50px] h-[50px] rounded-full bg-[#155bd5] flex justify-center items-center text-2xl text-white">
+                  <div className="w-[50px] h-[50px] flex-shrink-0 rounded-full bg-[#155bd5] flex justify-center items-center text-2xl text-white">
                     <PiPhoneThin />
                   </div>
                   <div className="contact-content">
@@ -237,7 +237,7 @@ const Home = () => {
                       Contact
                     </h4>
                     {/* <p>0984537278623</p> */}
-                    <p className="text-base">support@tracedataresearch.com</p>
+                    <p className="text-base word-wrap">support@tracedataresearch.com</p>
                   </div>
                 </div>
                 <div className="flex border border-[#e0e0e0] bg-white mb-7 p-5 rounded-lg hover:shadow-lg transition-all ease-out duration-300 gap-4">
@@ -282,7 +282,7 @@ const Home = () => {
                   </div>
                 </div>
                 <form action="#" className="contact-form">
-                  <div className="flex gap-4 mb-4">
+                  <div className="flex flex-col md:flex-row gap-4 mb-4">
                     <input
                       type="text"
                       name="name"
@@ -301,7 +301,7 @@ const Home = () => {
                       required
                     />
                   </div>
-                  <div className="flex gap-4 mb-4">
+                  <div className="flex flex-col md:flex-row gap-4 mb-4">
                     <input
                       type="text"
                       name="phone"
